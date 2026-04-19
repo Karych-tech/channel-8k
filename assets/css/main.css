@@ -1,0 +1,249 @@
+ header {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+ }
+
+ /* Navbar Styles */
+ .navbar {
+   background-color: #06141b;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.7rem 5%;
+   border-bottom: 1px solid #333;
+ }
+
+ .logo img {
+   max-height: 40px;
+   width: auto;
+   transition: transform 0.3s ease, filter 0.3s ease;
+ }
+
+ .logo img:hover {
+   transform: scale(1.1);
+   filter: drop-shadow(0 0 3px rgba(118, 96, 24, 0.6));
+ }
+
+
+ .nav-links {
+   display: flex;
+   list-style: none;
+ }
+
+ .nav-links li {
+   margin-left: 20px;
+   position: relative;
+ }
+
+ .nav-links a {
+   color: #fff;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+
+ .nav-links a:hover {
+   color: #fcbe29;
+ }
+
+ /* Hamburger Menu Styles */
+ .menu-toggle {
+   display: none;
+   flex-direction: column;
+   cursor: pointer;
+ }
+
+ .menu-toggle .bar {
+   width: 25px;
+   height: 3px;
+   background-color: #fff;
+   margin: 3px 0;
+   transition: 0.3s;
+ }
+
+ /* Hamburger to X Animation */
+ .menu-toggle.active .bar:nth-child(1) {
+   transform: translateY(9px) rotate(45deg);
+ }
+
+ .menu-toggle.active .bar:nth-child(2) {
+   opacity: 0;
+   transform: translateX(-20px);
+ }
+
+ .menu-toggle.active .bar:nth-child(3) {
+   transform: translateY(-9px) rotate(-45deg);
+ }
+
+
+
+ /* Footer Styles */
+ .footer {
+   border-radius: 15px 15px 0 0;
+   background-color: #000;
+   color: #fff;
+   padding: 60px 5% 30px;
+   border-top: 1px solid #333;
+ }
+
+ .footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+ }
+
+ .footer-logo img {
+   max-height: 40px;
+   width: auto;
+   margin-bottom: 30px;
+   display: inline-block;
+ }
+
+ .footer-links {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   margin-bottom: 30px;
+   flex-wrap: wrap;
+ }
+
+ .footer-links a {
+   color: #bbb;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+
+ .footer-links a:hover {
+   color: #fcbe29;
+ }
+
+ .footer-bottom {
+   border-top: 1px solid #222;
+   padding-top: 20px;
+   color: #777;
+   font-size: 0.9rem;
+ }
+
+
+ /* App Tags for Guide Cards */
+.app-tag {
+  display: inline-block;
+  background-color: #fcbe29;
+  color: #06141b;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+ /* Mobile Responsiveness */
+ @media (max-width: 768px) {
+   .menu-toggle {
+     display: flex;
+   }
+
+   .nav-links {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     top: 60px;
+     right: 5%;
+     width: 200px;
+     background-color: #11212d;
+     padding: 10px 0;
+     text-align: left;
+     border: 1px solid #333;
+     border-radius: 10px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+     /* Animation Properties */
+     opacity: 0;
+     visibility: hidden;
+     transform: translateY(-10px);
+     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+   }
+
+   .nav-links.active {
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+   }
+
+   .nav-links li {
+     margin: 5px 0;
+     margin-left: 0;
+   }
+
+   .nav-links a {
+     padding: 10px 20px;
+     display: block;
+   }
+
+   .logo img {
+     max-height: 30px;
+   }
+
+   /* In a full build, add a hamburger toggle here */
+ }
+
+ /* Floating Social Buttons */
+ .social-float-btn {
+   position: fixed;
+   bottom: 25px;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+   z-index: 2000;
+   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+   text-decoration: none;
+ }
+
+ .social-float-btn:hover {
+   transform: scale(1.1);
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+   color: #fff;
+ }
+
+ .whatsapp-float {
+   right: 25px;
+   background-color: #25d366;
+ }
+
+ .telegram-float {
+   left: 25px;
+   background-color: #0088cc;
+ }
+
+ @media (max-width: 768px) {
+   .social-float-btn {
+     width: 50px;
+     height: 50px;
+     bottom: 20px;
+   }
+
+   .whatsapp-float {
+     right: 20px;
+   }
+
+   .telegram-float {
+     left: 20px;
+   }
+
+   .social-float-btn svg {
+     width: 24px;
+     height: 24px;
+   }
+ }
+
