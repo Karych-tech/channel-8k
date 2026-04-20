@@ -27,7 +27,7 @@
 }
 
 .back-link {
-    color: #fcbe29;
+    color: #11212d; /* Changed from #fcbe29 for better contrast */
     text-decoration: none;
     display: inline-block;
     margin-bottom: 30px;
@@ -35,8 +35,8 @@
     transition: color 0.3s;
 }
 
-.back-link:hover {
-    color: #11212d;
+.back-link:hover { /* Updated hover color for better contrast and visual feedback */
+    color: #0F3D3E; 
 }
 
 .install-section h1 {

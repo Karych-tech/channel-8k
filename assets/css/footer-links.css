@@ -72,13 +72,13 @@ body {
 }
 
 .policy-card a:not(.back-link) {
-    color: #6366f1;
+    color: #4f46e5; /* Darker Indigo for better contrast ratio */
     text-decoration: underline;
     font-weight: 500;
 }
 
 .policy-card a:not(.back-link):hover {
-    color: #fcbe29;
+    color: #11212d; /* High-contrast dark blue on hover instead of yellow */
 }
 
 .policy-card ul {

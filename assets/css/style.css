@@ -451,15 +451,22 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px; /* Adjusting gap for larger padding */
     margin-bottom: 30px;
     flex-wrap: wrap;
   }
 
   .footer-links a {
+    display: inline-block;
+    padding: 12px 15px; /* Sufficient touch target size */
     color: #bbb;
     text-decoration: none;
     transition: color 0.3s ease;
+  }
+
+  .footer-logo a {
+    display: inline-block;
+    padding: 10px;
   }
 
   .footer-links a:hover {
