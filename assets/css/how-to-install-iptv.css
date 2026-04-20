@@ -219,10 +219,10 @@ code {
 .image-placeholder img {
    width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: fill;
     border-radius: 12px; 
     display: block; 
-    padding: 10px;
+    margin: 20px 0;
 }
 
 .recommended {
@@ -289,9 +289,13 @@ code {
 }
 
 @media (max-width: 768px) {
-    .guide-detail-container { padding: 20px; }
+    .guide-detail-container { padding: 15px; }
     .guide-header h1 { font-size: 1.8rem; }
-    .guide-content-section { padding: 40px 15px; }
+    .guide-content-section { padding: 30px 10px; }
+    .device-block, .setup-option { padding: 15px; }
+    .activation-steps > li { padding-left: 35px; }
+    .image-placeholder img { margin: 10px 0; }
+
 }
 
 @media (max-width: 768px) {
