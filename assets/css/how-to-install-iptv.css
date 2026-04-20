@@ -289,12 +289,23 @@ code {
 }
 
 @media (max-width: 768px) {
-    .guide-detail-container { padding: 15px; }
+    .guide-detail-container { padding: 20px 12px; }
     .guide-header h1 { font-size: 1.8rem; }
-    .guide-content-section { padding: 30px 10px; }
-    .device-block, .setup-option { padding: 15px; }
+    .guide-content-section { padding: 25px 5px; }
+    .device-block, .setup-option { padding: 15px 10px; }
+
+    /* Fix padding syntax and indentation */
     .activation-steps > li { padding-left: 35px; }
-    .image-placeholder img { margin: 10px 0; }
+
+    /* Allow images inside list items to expand to full container width */
+    .activation-steps > li .image-placeholder {
+        margin-left: -35px;
+        width: calc(100% + 35px);
+    }
+
+    .image-placeholder img { 
+        margin: 15px 0; 
+    }
 
 }
 
