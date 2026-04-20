@@ -213,7 +213,7 @@ code {
     border-radius: 4px;
     font-family: monospace;
     font-weight: bold;
-    color: #e63946;
+    color: #0F3D3E; /* Changed for better contrast */
 }
 
 .image-placeholder img {
