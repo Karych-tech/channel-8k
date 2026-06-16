@@ -267,7 +267,7 @@ body {
 
   .group-placeholder {
       padding: 20px;
-      color: #888;
+      color: #555; /* Increased contrast for accessibility */
       font-style: italic;
       font-size: 0.9rem;
   }
@@ -374,17 +374,18 @@ body {
 
   .article-card p {
       font-size: 0.9rem;
-      color: #666;
+      color: #444; /* Darkened for better readability */
       margin-bottom: 15px;
   }
 
   .article-card a {
-      color: #fcbe29;
+      color: #11212d; /* Changed from yellow to dark blue for contrast on white background */
       text-decoration: none;
       font-weight: bold;
       font-size: 0.9rem;
       display: inline-block;
       margin-top: 10px;
+      border-bottom: 2px solid #fcbe29; /* Maintained brand color as an accent */
   }
   .article-card a:hover { text-decoration: underline; }
 

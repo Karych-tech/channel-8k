@@ -26,11 +26,29 @@
           "about": {
             "@type": "Event",
             "name": "FIFA World Cup 2026",
+            "description": "A historic edition of the 2026 World Cup featuring 48 teams, hosted across 16 cities in the United States, Canada, and Mexico.",
             "startDate": "2026-06-11",
             "endDate": "2026-07-19",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+            "image": "https://channel-8k.com/assets/images/hero/hero-football.webp",
             "location": {
               "@type": "Place",
-              "name": "USA, Canada, Mexico"
+              "name": "USA, Canada, Mexico",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Multiple Cities",
+                "addressCountry": "US"
+              }
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "FIFA",
+              "url": "https://www.fifa.com"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "48 National Football Teams"
             }
           },
           "breadcrumb": { "@id": "https://channel-8k.com/pages/world-cup-2026#breadcrumb" }
@@ -177,7 +195,7 @@
         <h2>World Cup 2026 Match Schedule</h2>
         <p class="section-desc">Mark your calendars! Below is a selection of the highly anticipated opening and key stage matches.</p>
         <div class="table-wrapper">
-          <p class="mobile-hint" style="text-align: center; font-size: 0.8rem; color: #888; margin-bottom: 10px; display: none;">Swipe left to see full schedule &rarr;</p>
+          <p class="mobile-hint" style="text-align: center; font-size: 0.8rem; color: #555; margin-bottom: 10px; display: none;">Swipe left to see full schedule &rarr;</p>
           <table class="schedule-table">
             <thead>
               <tr>
@@ -301,35 +319,6 @@
           <div class="device-item"><strong>Fire TV Cube:</strong> Powerful processing for zero-lag streaming.</div>
         </div>
         <a href="/pages/how-to-install-iptv" class="btn-outline">Read Installation Guides</a>
-      </div>
-    </section>
-
-    <!-- 7. Football Articles -->
-    <section class="sports-section bg-alt">
-      <div class="container">
-        <h2>Latest World Cup Insights</h2>
-        <div class="article-grid">
-          <div class="article-card">
-            <h3>World Cup 2026 Predictions</h3>
-            <p>Who will lift the trophy in New Jersey? We analyze the favorites.</p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="article-card">
-            <h3>Top Players to Watch</h3>
-            <p>From rising stars to legendary icons in their final tournament.</p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="article-card">
-            <h3>Golden Boot Candidates</h3>
-            <p>Ranking the strikers most likely to win the top scorer award.</p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="article-card">
-            <h3>Stadium Guide</h3>
-            <p>A look inside the 16 architectural marvels hosting the games.</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
       </div>
     </section>
 
