@@ -1,0 +1,471 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Sports Page Custom Styles */
+  .sports-main {
+      background-color: #fff;
+      color: #11212d;
+      overflow-x: hidden;
+  }
+
+  .sports-main h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 30px;
+      font-weight: 800;
+  }
+
+  .hero-sports {
+      background: linear-gradient(rgba(6, 20, 27, 0.5), rgba(6, 20, 27, 0.95)),
+                  url('/assets/images/hero/hero-football.webp') center/cover no-repeat;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 120px 5% 80px;
+      position: relative;
+  }
+
+  .hero-content {
+      max-width: 1000px;
+      width: 100%;
+      z-index: 2;
+  }
+
+  .hero-content h1 {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      margin-bottom: 25px;
+      line-height: 1.1;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.7);
+  }
+
+  .hero-content p {
+      font-size: clamp(1rem, 1.8vw, 1.3rem);
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #e2e8f0;
+      font-weight: 400;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      line-height: 1.6;
+  }
+
+  .hero-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 8px 20px;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      color: #fcbe29;
+  }
+
+  .hero-live-badge span {
+      width: 8px;
+      height: 8px;
+      background: #ff4d4d;
+      border-radius: 50%;
+      display: block;
+      animation: pulse 1.5s infinite;
+  }
+
+  .hero-ctas {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .btn-primary {
+      background: #fcbe29;
+      color: #000;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(252, 190, 41, 0.3);
+  }
+  .btn-primary:hover { transform: translateY(-3px); background: #eab308; box-shadow: 0 15px 30px rgba(252, 190, 41, 0.5); }
+
+  .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      backdrop-filter: blur(5px);
+  }
+  .btn-secondary:hover { background: #fff; color: #000; }
+
+  @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.7; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.7; }
+  }
+
+  .sports-section {
+      padding: 80px 5%;
+  }
+
+  .bg-alt {
+      background-color: #f8fafc;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .section-desc {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+  }
+
+  /* Overview Grid */
+  .overview-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      align-items: center;
+  }
+
+  .facts-card {
+      background: #11212d;
+      color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 5px solid #fcbe29;
+  }
+
+  .facts-card h3 {
+      margin-bottom: 20px;
+      color: #fcbe29;
+  }
+
+  .facts-card ul {
+      list-style: none;
+  }
+
+  .facts-card li {
+      margin-bottom: 12px;
+      border-bottom: 1px solid #222;
+      padding-bottom: 8px;
+  }
+
+  /* Responsive Table */
+  .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eee;
+      -webkit-overflow-scrolling: touch;
+  }
+
+  .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      text-align: left;
+      min-width: 600px;
+  }
+
+  .schedule-table th {
+      background: #11212d;
+      color: #fcbe29;
+      padding: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+  }
+
+  .schedule-table td {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+  }
+
+  .schedule-table tr:hover {
+      background-color: #f0f9ff;
+  }
+
+  /* Group Cards */
+  .group-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+  }
+
+  .group-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform 0.3s;
+  }
+
+  .group-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .group-header {
+      background: #11212d;
+      color: #fcbe29;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #fcbe29;
+  }
+
+  .team-list {
+      list-style: none;
+      padding: 20px;
+  }
+
+  .team-list li {
+      padding: 10px 0;
+      border-bottom: 1px dashed #eee;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .team-list a {
+      color: #0F3D3E;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .group-placeholder {
+      padding: 20px;
+      color: #888;
+      font-style: italic;
+      font-size: 0.9rem;
+  }
+
+  .group-card.highlight {
+      border: 2px solid #fcbe29;
+      box-shadow: 0 5px 15px rgba(252, 190, 41, 0.2);
+  }
+
+  /* Watch Section */
+  .dark-bg {
+      background-color: #06141b;
+      color: #fff;
+      border-radius: 60px;
+      margin: 40px 20px;
+      padding: 100px 5%;
+  }
+
+  .dark-bg h2 {
+      color: #fff;
+      text-align: center;
+  }
+
+  .watch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+  }
+
+  .watch-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      border-top: 3px solid #fcbe29;
+  }
+
+  .watch-card h3 {
+      margin-bottom: 15px;
+      color: #fcbe29;
+      font-size: 1.3rem;
+  }
+
+  .watch-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+  }
+
+  /* Devices */
+  .device-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+
+  .device-item {
+      background: #f1f5f9;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 500;
+      border: 1px solid #e2e8f0;
+      transition: 0.3s;
+  }
+  .device-item:hover { background: #e2e8f0; transform: scale(1.05); }
+
+  .btn-outline {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid #11212d;
+      color: #11212d;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+
+  .btn-outline:hover {
+      background: #11212d;
+      color: #fff;
+  }
+
+  /* Articles */
+  .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+  }
+
+  .article-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .article-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #11212d;
+  }
+
+  .article-card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 15px;
+  }
+
+  .article-card a {
+      color: #fcbe29;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 10px;
+  }
+  .article-card a:hover { text-decoration: underline; }
+
+  /* FAQ Refined */
+  .faq-box {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  .faq-box h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      color: #11212d;
+  }
+  .faq-box h3::after {
+      content: '+';
+      color: #fcbe29;
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: transform 0.3s;
+  }
+  .faq-box.active h3::after {
+      content: '-';
+      transform: rotate(180deg);
+  }
+  .faq-box p {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      color: #475569;
+      opacity: 0;
+  }
+
+  .faq-box.active p {
+      max-height: 200px;
+      margin-top: 15px;
+      opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+      .overview-grid {
+          grid-template-columns: 1fr;
+      }
+
+      .hero-sports {
+          min-height: 100vh;
+          padding: 140px 5% 60px;
+          background-attachment: scroll;
+      }
+
+      .hero-content h1 {
+          font-size: 2.2rem;
+          letter-spacing: -1px;
+          margin-bottom: 15px;
+      }
+
+      .hero-content p {
+          font-size: 1.05rem;
+          margin-bottom: 30px;
+      }
+
+      .hero-ctas {
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+          max-width: 320px;
+          margin: 0 auto;
+      }
+
+      .btn-primary, .btn-secondary {
+          width: 100%;
+          padding: 18px 20px;
+      }
+
+      .dark-bg {
+          margin: 0;
+          border-radius: 0;
+      }
+  }
